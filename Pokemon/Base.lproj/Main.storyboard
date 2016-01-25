@@ -191,6 +191,9 @@
                                             <constraint firstAttribute="width" constant="52" id="k5f-Nt-Ak8"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="qU2-OR-kk8" eventType="touchUpInside" id="TGw-9o-coe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9565199607" green="0.25818859090000001" blue="0.36670453450000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -389,7 +392,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentEvoImg" destination="tMI-L5-XNJ" id="Qw2-Qh-WS2"/>
+                        <outlet property="defenseLbl" destination="BEh-Ng-dEt" id="hur-Dk-Yo7"/>
+                        <outlet property="descriptionLbl" destination="Vab-66-zkb" id="uKi-9q-AlC"/>
+                        <outlet property="evoLbl" destination="xfa-zs-64U" id="wcU-Ee-wAw"/>
+                        <outlet property="heightLbl" destination="i43-R0-W33" id="KL3-BI-Hvy"/>
+                        <outlet property="mainImg" destination="VA8-ec-C4o" id="J0F-lb-reV"/>
                         <outlet property="nameLbl" destination="QNv-IV-m9Q" id="KoD-vX-t2I"/>
+                        <outlet property="nextEvoImg" destination="COO-IK-hrS" id="QCa-VO-aAP"/>
+                        <outlet property="pokedexLbl" destination="KAu-yE-w3h" id="6Iw-Bq-QuL"/>
+                        <outlet property="typeLbl" destination="Jmw-sr-jCk" id="c6L-Y9-GHf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbA-tX-DsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
