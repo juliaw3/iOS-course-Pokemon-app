@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -129,11 +130,49 @@
                     <connections>
                         <outlet property="collection" destination="pJR-L5-bQf" id="gAy-mz-dgu"/>
                         <outlet property="searchbar" destination="MbT-hU-Xa8" id="Q5i-Tt-PH1"/>
+                        <segue destination="qU2-OR-kk8" kind="show" identifier="PokemonDetailVC" id="VCn-7J-Dxs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="159" y="355"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="ma3-y9-HX5">
+            <objects>
+                <viewController id="qU2-OR-kk8" customClass="PokemonDetailVC" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="co7-cs-pbo"/>
+                        <viewControllerLayoutGuide type="bottom" id="qbE-pA-8dS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cZ3-dz-qus">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-IV-m9Q">
+                                <rect key="frame" x="199" y="177" width="222" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Llf-F3-8lv"/>
+                                    <constraint firstAttribute="width" constant="222" id="dVx-IT-rkB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9565199607" green="0.25818859090000001" blue="0.36670453450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QNv-IV-m9Q" firstAttribute="centerY" secondItem="cZ3-dz-qus" secondAttribute="centerY" id="ZCv-Eg-eJE"/>
+                            <constraint firstItem="QNv-IV-m9Q" firstAttribute="centerX" secondItem="cZ3-dz-qus" secondAttribute="centerX" id="oN2-4Q-dQt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="QNv-IV-m9Q" id="KoD-vX-t2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PbA-tX-DsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="355"/>
         </scene>
     </scenes>
     <resources>
