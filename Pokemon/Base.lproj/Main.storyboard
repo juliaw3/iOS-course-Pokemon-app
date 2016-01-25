@@ -25,15 +25,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-hR-7Lf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIC-cb-IK6">
+                                        <rect key="frame" x="116" y="8" width="369" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="trl-Jh-gUd"/>
+                                            <constraint firstAttribute="width" constant="369" id="ybd-Sl-0xa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="29"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.9565199607" green="0.25818859090000001" blue="0.36670453450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="50i-et-lZs"/>
+                                    <constraint firstItem="FIC-cb-IK6" firstAttribute="centerY" secondItem="wRB-hR-7Lf" secondAttribute="centerY" id="kbj-Mi-3fL"/>
+                                    <constraint firstItem="FIC-cb-IK6" firstAttribute="centerX" secondItem="wRB-hR-7Lf" secondAttribute="centerX" id="zpx-op-Re0"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="SoT-BM-Duj">
                                 <rect key="frame" x="0.0" y="90" width="600" height="510"/>
                             </imageView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MbT-hU-Xa8">
+                            <searchBar contentMode="redraw" placeholder="Search for Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="MbT-hU-Xa8">
                                 <rect key="frame" x="0.0" y="54" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -114,6 +128,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="pJR-L5-bQf" id="gAy-mz-dgu"/>
+                        <outlet property="searchbar" destination="MbT-hU-Xa8" id="Q5i-Tt-PH1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
